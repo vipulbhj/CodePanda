@@ -16,7 +16,7 @@
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 .form input {
-  font-family: "Roboto", sans-serif;
+  font-family : "Courier New", Courier, monospace;
   outline: 0;
   background: #f2f2f2;
   width: 100%;
@@ -27,7 +27,7 @@
   font-size: 14px;
 }
 .form button {
-  font-family: "Roboto", sans-serif;
+  font-family : "Courier New", Courier, monospace;
   text-transform: uppercase;
   outline: 0;
   background: #4CAF50;
@@ -95,13 +95,22 @@ body {
   background: -moz-linear-gradient(right, #76b852, #8DC26F);
   background: -o-linear-gradient(right, #76b852, #8DC26F);
   background: linear-gradient(to left, #76b852, #8DC26F);
-  font-family: "Roboto", sans-serif;
+  font-family : "Courier New", Courier, monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;      
 }
 
+img{
+	float: left;
+}
+.topName{
+	margin-left: 20px;
+	font-size: 50px;
+	float: left;
+}
+
 .form input[type=submit] {
-  font-family: "Roboto", sans-serif;
+  font-family : "Courier New", Courier, monospace;
   text-transform: uppercase;
   outline: 0;
   background: #4CAF50;
@@ -134,10 +143,14 @@ li {
 
 li a {
     display: block;
-    color: white;
+    color: darkgreen;
+	font-size: 25px;
     text-align: center;
     padding: 14px 16px;
+	font-weight: bold;
     text-decoration: none;
+	border-left-style: inset;
+	border-color: black;
 }
 
 li a:hover:not(.active) {
