@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Submission
+{% endblock %}
+
+{% block username %}
+    {{ name }}
+{% endblock %}
+
+
+{% block main %}
+    <form action="{{ url_for('submission') }}" method="post">
+        <fieldset>
+            <div class="form-group">
+                <input class="form-control" name="filename" placeholder="File Name(Ex:- HelloWorld)" type="text" required />
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Enter your code here" name="code" style="width:500px;height:250px;" required></textarea>
+            </div>
+            <div class="form-group">
+                <input class="form-control" name="extension" placeholder="File Extension(Ex:- .java)" type="text" required />
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary btn-lg btn-warning" type="submit">Submit Code</button>
+            </div>
+        </fieldset>
+    </form>
+{% endblock %}
