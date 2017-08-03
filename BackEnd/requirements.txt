@@ -1,4 +1,0 @@
-Libraries:-
-cs50-External
-passlib
-flask_session
